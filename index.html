@@ -1,0 +1,38 @@
+<html>
+<style>
+.header-gradient-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background: #1B8FFF;
+    background: -webkit-linear-gradient(45deg,#38A0F5 0,#1B8FFF 40%,#2E6AE3 80%);
+    background: -moz-linear-gradient(45deg,#38A0F5 0,#1B8FFF 40%,#2E6AE3 80%);
+    background: -ms-linear-gradient(45deg,#38A0F5 0,#1B8FFF 40%,#2E6AE3 80%);
+    background: linear-gradient(45deg,#38A0F5 0,#1B8FFF 40%,#2E6AE3 80%);
+}
+</style>
+<body style="
+    background: #1B8FFF;
+">
+<header id="ourintro" class="vhcentered pageHeader z10 slides fixed this-active" data-index="0">
+				<div class="header-gradient-bg"></div>
+				
+				
+			<div id="webgl-canvas"></div>
+</header>
+
+
+
+
+<script src="./staticfiles/jquery-2.1.0.min.js"></script>
+<script src="./staticfiles/jquery-migrate-1.2.1.min.js"></script>
+<script src="./staticfiles/three.js"></script>
+<script src="./staticfiles/workers.min.js"></script>
+<script>
+webglWave("init", "ourintro");
+</script>
+</body>
+</html>
